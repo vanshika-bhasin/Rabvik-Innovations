@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { Button } from'./Button';
+import { Button2 } from'./Button2';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -30,7 +31,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            YASH <i class='fab fa-typo3' />
+            Ravik
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -65,10 +66,24 @@ function Navbar() {
                 Sign Up
               </Link>
             </li>
+            <li>
+              <Link
+                to='/login'
+                className='nav-links-mobile'
+                onClick={closeMobileMenu}
+              >
+                Login
+              </Link>
+            </li>
           </ul>
           {button && <Button buttonStyle='btn--outline'>
               SIGN UP
           </Button>}
+          <div className="login_gap">
+            {button && <Button2  >
+              LOGIN
+          </Button2>}
+          </div>
         </div>
       </nav>
     </>
