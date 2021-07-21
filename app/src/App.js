@@ -1,40 +1,25 @@
+import React from 'react';
 import './App.css';
-import {Switch,Route} from 'react-router-dom';
-import Header from './components/Header/Header';
-import Login from './components/Login/Login';
-import Landing from './components/Landing/Landing';
-import Questionnaire from './components/Questionnaire/Questionnaire';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import DashBoard from './components/DashBoard/DashBoard';
-function App() {
-  return (
-    <>
-      <Header/>
-      <Switch>
-        <Route path="/" exact component={Landing} />
-        <Route path="/login" component={Login} />
-      </Switch>
-      <Questionnaire/>
-    </>
-}
+import Navbar from './components/Navbar';
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Home from './components/pages/Home';
+import SignUp from './components/pages/SignUp';
+import Login from './components/pages/Login';
+import Services from './components/pages/Services';
+import Products from './components/pages/Products';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
       <Router>
-
-        <Header/>
-
-      <Switch>
-        <Route path='/login' exact >
-          <Login />
-        </Route>
-        <Route path='/dashboard' exact >
-          <DashBoard />
-        </Route>
-      </Switch>
-
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component= {Home} />
+          <Route path='/services' exact component= {Services} />
+          <Route path='/products' exact component= {Products} />
+          <Route path='/sign-up' exact component= {SignUp} />
+          <Route path='/login' exact component= {Login} />
+        </Switch>
       </Router>
     </div>
   );
