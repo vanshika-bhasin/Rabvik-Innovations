@@ -6,13 +6,15 @@
 
 ## Quick Start
 
-- Fork and Clone the repo using
-```
-git clone https://github.com/vanshika-bhasin/Rabvik-Innovations.git
-```
+- Fork and Clone the repo by clicking on Code button
+
 - Install dependencies using
 ```
 npm install
+```
+Go into the app folder by 
+```
+cd app
 ```
 - Run server using
 ```
