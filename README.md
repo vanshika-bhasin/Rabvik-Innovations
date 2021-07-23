@@ -20,9 +20,10 @@ cd app
 ```
 npm start
 ```
-- Then in Browser
-
+- The project automatically open in your default browser, if not then go to any browser and type this in search box:
+```
 localhost:3000
+```
 
 ## Useful Resources
 
