@@ -84,11 +84,11 @@ function Questionnaire() {
     const [pastOwn,setPastOwn]=useState('');
     const [pastPer,setPastPer]=useState('');
     const addFounderHandler = ()=>{
-        setFounderBg([...founderBg,founderInput]);
+        founderInput!=='' && setFounderBg([...founderBg,founderInput]);
         setFounderInput('');
     };
     const addEmployeeHandler = ()=>{
-        setEmpBg([...empBg,empInput]);
+        empInput!=='' && setEmpBg([...empBg,empInput]);
         setEmpInput('');
     };
     
