@@ -6,21 +6,28 @@
 
 ## Quick Start
 
-- Fork and Clone the repo by clicking on Code button
+## Make sure you have installed Git and Node
 
-- Install dependencies using
-```
-npm install
-```
-Go into the app folder by 
+1. **Fork** the repository in your github repository by clicking the ```fork``` button at the **top rigth** corner
+
+2. **Clone** the repository in your local machine
+  * Click on the green **Code** button
+  * **Copy** the repository url
+  * Open your terminal and run ``` git clone <copied url> ```
+
+3. Go into the **app** folder by 
 ```
 cd app
 ```
-- Run server using
+4. Install dependencies using
+```
+npm install
+```
+5. Run the file by
 ```
 npm start
 ```
-- The project automatically open in your default browser, if not then go to any browser and type this in search box:
+6. The project automatically open in your default browser, if not then go to any browser and type this in search box:
 ```
 localhost:3000
 ```
