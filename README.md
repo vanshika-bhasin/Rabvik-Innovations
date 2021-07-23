@@ -26,8 +26,8 @@ localhost:3000
 
 ## Useful Resources
 
+- [React Docs](https://reactjs.org/docs/getting-started.html)
 - [NodeJS Docs](https://nodejs.org/docs/latest-v12.x/api/)
 - [Bootstrap Docs](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 - [Git and GitHub](https://www.digitalocean.com/community/tutorials/how-to-use-git-a-reference-guide)
 
-## Like This?? Star ⭐ this Repo.
